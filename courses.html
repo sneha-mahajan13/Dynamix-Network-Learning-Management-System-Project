@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Courses Management</h2>
+    <form method="post">
+        <input name="title" placeholder="Course Title"><br>
+        <input name="description" placeholder="Description"><br>
+        <button>Add Course</button>
+    </form>
+    <hr>
+    {% for c in course %}
+    <p>{{c[1]}}</p>
+    {% endfor %}
+</body>
+</html>
